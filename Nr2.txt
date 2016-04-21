@@ -9,3 +9,5 @@ function [p,z] = procent_prosty(w, n, s)
 p = w*(1 + s*n);  
 z = p - w;
 end
+
+Tu coœ doda³em xD
