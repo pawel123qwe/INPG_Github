@@ -1,0 +1,14 @@
+q  = 0.7;                           %    inicjalizacja ilorazu szeregu
+suma_szeregu  =  0;                 %    szukana suma szeregu, wartoœæ zero na starcie
+m  =  0;                            %    liczba iteracji (indeks), zero na starcie 
+pom  =  - 1;                        %    zmienna pomocnicza, aby pêtla mog³a wystartowaæ
+                                    %    na pocz¹tku nadajê jej wartoœæ -1
+ 
+while suma_szeregu  >   pom         %    pocz¹tek pêtli while
+pom  =  suma_szeregu;
+suma_szeregu =  suma_szeregu + q^m;
+m  =  m + 1;
+end                                 %     koniec pêtli while
+ 
+disp(suma_szeregu)                  %     pokazuje na ekranie obliczon¹ sumê szeregu
+disp(m)                             %     pokazuje koñcow¹ liczbê liczbê iteracji
