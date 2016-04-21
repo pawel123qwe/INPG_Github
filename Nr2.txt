@@ -23,5 +23,7 @@ function [p,z] = procent_prosty(w, n, s)
  
 p = w*(1 + s*n);  
 z = p - w;
+
+coœ tutaj doda³em, ale tego nie widac ;-(
 end
 >>>>>>> 586dc8a34b67567ff5ca47c72d21ffeb64f4cc53
