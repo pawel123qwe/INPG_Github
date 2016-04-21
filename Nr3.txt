@@ -23,6 +23,8 @@ function [p,z] = procent_skladany(w, n, m, s)
  
 p = (1 + s/m)^(n*m)  
 p = w * p
+
+modyfikujê
 z = p - w;
 >>>>>>> 586dc8a34b67567ff5ca47c72d21ffeb64f4cc53
 end
