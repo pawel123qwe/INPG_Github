@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function [p,z] = procent_prosty(w, n, s)
 %   oblicza przysz³¹ wartoœæ kapita³u
 %   p  - przysz³a wartoœæ kapita³u 
@@ -11,3 +12,16 @@ z = p - w;
 end
 
 Tu coœ doda³em xD
+=======
+function [p,z] = procent_prosty(w, n, s)
+%   oblicza przysz³¹ wartoœæ kapita³u
+%   p  - przysz³a wartoœæ kapita³u 
+%   w  - wejœciowa wartoœæ kapita³u
+%   s  - stopa procentowa obowi¹zuj¹ca w jednostce czasu, np. w roku
+%   n  - iloœæ jednostek czasu, w którym obowi¹zuje stopa s, np. iloœæ lat
+%   z  - zysk od kapita³u o 
+ 
+p = w*(1 + s*n);  
+z = p - w;
+end
+>>>>>>> 586dc8a34b67567ff5ca47c72d21ffeb64f4cc53

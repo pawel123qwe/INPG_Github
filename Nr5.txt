@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 %  A x^2 + B*x + C  = = 0            równanie kwadratowe
 A = 1; , B = 2; , C = 3;               %    nadanie wartoœci sta³ym równania kwadratowego 
 delta  =  B^2  -  4*A*C;               %    obliczanie delta 
@@ -8,4 +9,16 @@ x1 =- B/(2*A); , x2 = x1;
 else
 x1=NaN; , x2=NaN;                      %     skrót od ang. not a number
 end
+=======
+%  A x^2 + B*x + C  = = 0            równanie kwadratowe
+A = 1; , B = 2; , C = 3;               %    nadanie wartoœci sta³ym równania kwadratowego 
+delta  =  B^2  -  4*A*C;               %    obliczanie delta 
+if  delta  > 0
+x1 = ( - B - sqrt(delta))/(2*A); , x2 = (-B + sqrt(delta))/(2*A);
+elseif delta = = 0
+x1 =- B/(2*A); , x2 = x1;
+else
+x1=NaN; , x2=NaN;                      %     skrót od ang. not a number
+end
+>>>>>>> 586dc8a34b67567ff5ca47c72d21ffeb64f4cc53
 disp(‘pierwszy pierwiastek:  ‘), disp(x1), disp(‘drugi pierwiastek: ‘), disp(x2)

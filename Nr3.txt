@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function [p,z] = procent_skladany(w, n, m, s)
 %   oblicza przysz³¹ wartoœæ kapita³u
 %   p  - przysz³a wartoœæ kapita³u 
@@ -10,4 +11,18 @@ function [p,z] = procent_skladany(w, n, m, s)
 p = (1 + s/m)^(n*m)  
 p = w * p
 z = p - w;
+=======
+function [p,z] = procent_skladany(w, n, m, s)
+%   oblicza przysz³¹ wartoœæ kapita³u
+%   p  - przysz³a wartoœæ kapita³u 
+%   w  - wejœciowa wartoœæ kapita³u
+%   s  - stopa procentowa w ustalonym okresie czasu, np. w roku
+%   m  - iloœæ kapitalizacji w ustalonym okresie czasu, np. w roku
+%   n  - iloœæ okresów czasu, w którym obowi¹zuje stopa s, np. iloœæ lat
+%   z  - zysk od kapita³u wejœciowego w 
+ 
+p = (1 + s/m)^(n*m)  
+p = w * p
+z = p - w;
+>>>>>>> 586dc8a34b67567ff5ca47c72d21ffeb64f4cc53
 end

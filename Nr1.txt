@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 disp('ARYTMETYKA - SAMOUCZEK' )          
 disp(' ')
 a = 't' ;
@@ -51,4 +52,59 @@ if a == 'n' | a == 'N'
 disp('Bye, bye, bye, ...')
 end
 disp('  ')
+=======
+disp('ARYTMETYKA - SAMOUCZEK' )          
+disp(' ')
+a = 't' ;
+while a == 't' | a == 'T'
+ 
+disp(' Wybierz dzialanie:  ')            
+disp(' 1. Dodawanie ')
+disp(' 2. Odejmowanie ')
+disp(' 3. Mnozenie ')
+wybor = input('  ');         % tutaj decydujesz, jakie dzia³anie cwiczysz 
+ 
+m = floor(10*rand()) + 1;
+n = floor(10*rand()) + 1;
+ 
+switch wybor 
+case 1
+suma = m + n;
+disp(['Ile wynosi suma liczb: ' num2str(m) ' + ' num2str(n) '       '])
+odpowiedz = input(' ')
+if odpowiedz == suma
+disp(' Brawo ')
+else
+disp(' Niestety, niedobrze ')
+end
+ 
+case 2 
+roznica = m - n;
+disp(['Ile wynosi roznica liczb: ' num2str(m) ' - ' num2str(n) '       '])
+odpowiedz = input(' ')
+if odpowiedz == roznica
+disp(' OK ')
+else
+disp(' Niestety, .... ')
+end
+ 
+case 3
+iloczyn = m * n;
+disp(['Ile wynosi iloczyn iczb: ' num2str(m) ' * ' num2str(n) '       '])
+odpowiedz = input(' ')
+if odpowiedz == iloczyn
+disp(' Dobrze ')
+else
+disp(' Odpowiedz niepoprawna ')
+end
+ 
+end
+ 
+disp( ' ')
+a = input(' Czy chcesz kontynuowac ? T/N ', 's')
+if a == 'n' | a == 'N'
+disp('Bye, bye, bye, ...')
+end
+disp('  ')
+>>>>>>> 586dc8a34b67567ff5ca47c72d21ffeb64f4cc53
 end
